@@ -1,0 +1,30 @@
+openapi: 3.0.0
+info:
+  title: My API
+  description: This is a sample API documentation.
+  version: 1.0.0
+paths:
+  /asset-management/products:
+    get:
+      summary: List Asset Management Products
+      responses:
+        '200':
+          description: A list of asset management products.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+  /investment-management/products:
+    get:
+      summary: List Investment Management Products
+      responses:
+        '200':
+          description: A list of investment management products.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
